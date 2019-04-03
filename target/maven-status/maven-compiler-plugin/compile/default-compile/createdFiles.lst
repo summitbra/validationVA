@@ -1,0 +1,14 @@
+com\test\demo\service\OrderService.class
+com\test\demo\service\StockService.class
+com\test\demo\entity\Stock.class
+com\test\demo\jms\JmsResponse.class
+com\test\demo\jms\JmsListenerConfig.class
+com\test\demo\entity\Product.class
+com\test\demo\config\VAValidationConfig.class
+com\test\demo\repository\ProductRepository.class
+com\test\demo\VAValidationApplication.class
+com\test\demo\jms\JmsReceiver.class
+com\test\demo\controller\StockController.class
+com\test\demo\controller\OrderVAController.class
+com\test\demo\kafka\KafkaReceiver.class
+com\test\demo\repository\StockRepository.class

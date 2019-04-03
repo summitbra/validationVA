@@ -1,0 +1,14 @@
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\jms\JmsResponse.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\entity\Product.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\config\VAValidationConfig.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\service\StockService.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\VAValidationApplication.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\controller\OrderVAController.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\jms\JmsListenerConfig.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\entity\Stock.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\controller\StockController.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\service\OrderService.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\kafka\KafkaReceiver.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\repository\StockRepository.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\repository\ProductRepository.java
+C:\Users\marco\IdeaProjects\validationVA\src\main\java\com\test\demo\jms\JmsReceiver.java
