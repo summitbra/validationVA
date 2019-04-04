@@ -127,20 +127,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OrderVAController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/controller/OrderVAController.java">
+      <file leaf-file-name="AuditLogService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/service/AuditLogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-              <folding>
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,9 +160,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/DemoApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/config/VAValidationConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/VAValidationApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/controller/OrderVAController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/entity/AuditLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/repository/AuditLogRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/service/AuditLogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/jms/JmsListenerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/jms/JmsReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/kafka/KafkaReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/jms/JmsResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/DefaultAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByPriceAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByStockAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByPromotionAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByFraudAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByCustomerAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/controller/AuditLogController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/entity/AuditLog.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/service/AuditLogService.java" />
       </list>
     </option>
   </component>
@@ -184,7 +204,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1932" />
@@ -237,7 +257,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="validationVA" type="b2602c69:ProjectViewProjectNode" />
@@ -245,7 +265,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="validationVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="validationVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="validationVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="validationVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,7 +294,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -263,7 +304,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,7 +314,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="jms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,7 +324,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -290,7 +334,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -299,7 +344,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,27 +354,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="validationVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="validationVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="validationVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="validationVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="validationVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="validationVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,8 +367,17 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leroymerlin.va.validation.action" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\marco\IdeaProjects\validationVA" />
     </key>
@@ -360,10 +394,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="Spring Boot.VAValidationApplication">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.test.demo.VAValidationApplication" />
+      <module name="validationVA" />
+      <envs />
+    </configuration>
+    <configuration name="VAValidationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.leroymerlin.va.validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leroymerlin.va.validation.VAValidationApplication" />
       <module name="validationVA" />
       <envs />
     </configuration>
@@ -447,6 +492,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.DemoApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.VAValidationApplication" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.VAValidationApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -458,24 +512,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554298007654</updated>
-      <workItem from="1554298008898" duration="2305000" />
+      <workItem from="1554298008898" duration="6643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2305000" />
+    <option name="totallyTimeSpent" value="6643000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="1" />
+    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5038504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -484,6 +540,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -494,7 +551,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -509,18 +565,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/controller/StockController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/controller/StockController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1551711252000" expanded="false" signature="42:282" ph="..." />
-            <marker date="1551711252000" expanded="false" signature="504:515" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="538:544" ph=" }" />
-            <marker date="1551711252000" expanded="false" signature="629:640" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="669:675" ph=" }" />
-            <marker date="1551711252000" expanded="true" signature="1009:1413" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -549,217 +598,327 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/kafka/KafkaReceiver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/entity/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/service/StockService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/config/VAValidationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <marker date="1553199006000" expanded="false" signature="37:526" ph="..." />
-            <marker date="1553199006000" expanded="false" signature="752:763" ph=" { " />
-            <marker date="1553199006000" expanded="false" signature="776:782" ph=" }" />
-            <marker date="1553199006000" expanded="false" signature="902:913" ph=" { " />
-            <marker date="1553199006000" expanded="false" signature="952:958" ph=" }" />
-            <marker date="1553199006000" expanded="true" signature="1071:1480" ph="{...}" />
+            <marker date="1554374182996" expanded="false" signature="54:164" ph="..." />
+            <marker date="1554374182996" expanded="true" signature="166:193" ph="@{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/jms/JmsResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/jms/JmsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <marker date="1554375148688" expanded="true" signature="169:184" ph=" { " />
+            <marker date="1554375148688" expanded="true" signature="194:200" ph=" }" />
+            <marker date="1554375148688" expanded="true" signature="233:248" ph=" { " />
+            <marker date="1554375148688" expanded="true" signature="261:267" ph=" }" />
+            <marker date="1554375148688" expanded="true" signature="299:314" ph=" { " />
+            <marker date="1554375148688" expanded="true" signature="328:334" ph=" }" />
+            <marker date="1554375148688" expanded="true" signature="378:393" ph=" { " />
+            <marker date="1554375148688" expanded="true" signature="414:420" ph=" }" />
+            <marker date="1554375148688" expanded="true" signature="451:466" ph=" { " />
+            <marker date="1554375148688" expanded="true" signature="479:485" ph=" }" />
+            <marker date="1554375148688" expanded="true" signature="527:542" ph=" { " />
+            <marker date="1554375148688" expanded="true" signature="561:567" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/jms/JmsReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1554374282804" expanded="false" signature="51:337" ph="..." />
+            <marker date="1554374282804" expanded="false" signature="112:337" ph="..." />
+            <marker date="1554374282804" expanded="false" signature="571:586" ph=" { " />
+            <marker date="1554374282804" expanded="false" signature="625:631" ph=" }" />
+            <marker date="1554374282804" expanded="true" signature="637:750" ph="@{...}" />
+            <marker date="1554374282804" expanded="true" signature="810:1220" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/jms/JmsListenerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <marker date="1554374205134" expanded="false" signature="51:974" ph="..." />
+            <marker date="1554374205134" expanded="true" signature="976:1001" ph="@{...}" />
+            <marker date="1554374205134" expanded="false" signature="1205:1220" ph=" { " />
+            <marker date="1554374205134" expanded="false" signature="1270:1276" ph=" }" />
+            <marker date="1554374205134" expanded="true" signature="1499:1727" ph="{...}" />
+            <marker date="1554374205134" expanded="true" signature="1813:2000" ph="{...}" />
+            <marker date="1554374205134" expanded="false" signature="2059:2074" ph=" { " />
+            <marker date="1554374205134" expanded="false" signature="2120:2126" ph=" }" />
+            <marker date="1554374205134" expanded="true" signature="2226:2310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/kafka/KafkaReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <marker date="1554374334604" expanded="false" signature="53:577" ph="..." />
+            <marker date="1554374334604" expanded="false" signature="803:814" ph=" { " />
+            <marker date="1554374334604" expanded="false" signature="827:833" ph=" }" />
+            <marker date="1554374334604" expanded="false" signature="959:970" ph=" { " />
+            <marker date="1554374334604" expanded="false" signature="1009:1015" ph=" }" />
+            <marker date="1554374334604" expanded="true" signature="1128:1542" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="155" column="13" lean-forward="false" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+          <folding>
+            <marker date="1489553090000" expanded="false" signature="0:345" ph="/.../" />
+            <marker date="1489553090000" expanded="true" signature="440:4916" ph="/**...*/" />
+            <marker date="1489553090000" expanded="true" signature="4951:5055" ph="/**...*/" />
+            <marker date="1489553090000" expanded="true" signature="5127:5845" ph="{...}" />
+            <marker date="1489553090000" expanded="false" signature="5228:5243" ph=" { " />
+            <marker date="1489553090000" expanded="false" signature="5259:5269" ph=" }" />
+            <marker date="1489553090000" expanded="false" signature="5293:5308" ph=" { " />
+            <marker date="1489553090000" expanded="false" signature="5326:5336" ph=" }" />
+            <marker date="1489553090000" expanded="false" signature="5390:5405" ph=" { " />
+            <marker date="1489553090000" expanded="false" signature="5439:5449" ph=" }" />
+            <marker date="1489553090000" expanded="true" signature="5508:5839" ph="{...}" />
+            <marker date="1489553090000" expanded="true" signature="5881:6181" ph="/**...*/" />
+            <marker date="1489553090000" expanded="true" signature="6219:6335" ph="{...}" />
+            <marker date="1489553090000" expanded="true" signature="6341:7432" ph="/**...*/" />
+            <marker date="1489553090000" expanded="true" signature="7485:7536" ph="{...}" />
+            <marker date="1489553090000" expanded="true" signature="7542:9314" ph="/**...*/" />
+            <marker date="1489553090000" expanded="true" signature="9405:9481" ph="{...}" />
+            <marker date="1489553090000" expanded="true" signature="9487:9870" ph="/**...*/" />
+            <marker date="1489553090000" expanded="false" signature="9898:9909" ph=" { " />
+            <marker date="1489553090000" expanded="false" signature="9931:9937" ph=" }" />
+            <marker date="1489553090000" expanded="true" signature="9943:10111" ph="/**...*/" />
+            <marker date="1489553090000" expanded="false" signature="10138:10149" ph=" { " />
+            <marker date="1489553090000" expanded="false" signature="10172:10178" ph=" }" />
+            <marker date="1489553090000" expanded="true" signature="10184:10448" ph="/**...*/" />
+            <marker date="1489553090000" expanded="false" signature="10477:10488" ph=" { " />
+            <marker date="1489553090000" expanded="false" signature="10550:10556" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/DumpTest20190226.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-863">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/leroymerlin/va/validation/DemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <marker date="1554374182949" expanded="false" signature="47:217" ph="..." />
+            <marker date="1554374182949" expanded="true" signature="219:263" ph="@{...}" />
+            <marker date="1554374182949" expanded="true" signature="336:340" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/DefaultAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <marker date="1554375524409" expanded="true" signature="132:195" ph="{...}" />
+            <marker date="1554375524409" expanded="true" signature="142:166" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByCustomerAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <marker date="1551711252000" expanded="false" signature="149:160" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="170:176" ph=" }" />
-            <marker date="1551711252000" expanded="false" signature="207:218" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="231:237" ph=" }" />
-            <marker date="1551711252000" expanded="false" signature="268:279" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="293:299" ph=" }" />
-            <marker date="1551711252000" expanded="false" signature="341:352" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="373:379" ph=" }" />
-            <marker date="1551711252000" expanded="false" signature="406:417" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="430:436" ph=" }" />
-            <marker date="1551711252000" expanded="false" signature="473:484" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="503:509" ph=" }" />
+            <marker date="1554375869978" expanded="true" signature="145:208" ph="{...}" />
+            <marker date="1554375869978" expanded="true" signature="155:179" ph="//..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/jms/JmsReceiver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByFraudAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1554375869947" expanded="true" signature="142:205" ph="{...}" />
+            <marker date="1554375869947" expanded="true" signature="152:176" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByPriceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1554375722618" expanded="true" signature="142:205" ph="{...}" />
+            <marker date="1554375722618" expanded="true" signature="152:176" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByPromotionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1554375870009" expanded="true" signature="146:209" ph="{...}" />
+            <marker date="1554375870009" expanded="true" signature="156:180" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/action/ValidationByStockAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1554375761316" expanded="true" signature="142:205" ph="{...}" />
+            <marker date="1554375761316" expanded="true" signature="152:176" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/repository/AuditLogRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
-            <marker date="1551711252000" expanded="false" signature="35:302" ph="..." />
-            <marker date="1551711252000" expanded="false" signature="526:537" ph=" { " />
-            <marker date="1551711252000" expanded="false" signature="576:582" ph=" }" />
-            <marker date="1551711252000" expanded="true" signature="588:699" ph="@{...}" />
-            <marker date="1551711252000" expanded="true" signature="753:1137" ph="{...}" />
+            <marker date="1554374182918" expanded="false" signature="58:213" ph="..." />
+            <marker date="1554374182918" expanded="false" signature="105:213" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/jms/JmsListenerConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/VAValidationApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <marker date="1551378136000" expanded="false" signature="35:958" ph="..." />
-            <marker date="1551378136000" expanded="true" signature="960:985" ph="@{...}" />
-            <marker date="1551378136000" expanded="false" signature="1186:1197" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="1245:1251" ph=" }" />
-            <marker date="1551378136000" expanded="true" signature="1463:1686" ph="{...}" />
-            <marker date="1551378136000" expanded="true" signature="1767:1950" ph="{...}" />
-            <marker date="1551378136000" expanded="false" signature="2008:2019" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="2064:2070" ph=" }" />
-            <marker date="1551378136000" expanded="true" signature="2164:2245" ph="{...}" />
+            <marker date="1554374183027" expanded="true" signature="47:159" ph="..." />
+            <marker date="1554374183027" expanded="false" signature="267:282" ph=" { " />
+            <marker date="1554374183027" expanded="false" signature="343:349" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/repository/ProductRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/entity/AuditLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        <state relative-caret-position="365">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
-            <marker date="1551378136000" expanded="false" signature="42:380" ph="..." />
+            <marker date="1554376590407" expanded="false" signature="54:232" ph="..." />
+            <marker date="1554376590407" expanded="true" signature="271:294" ph="@{...}" />
+            <marker date="1554376590407" expanded="true" signature="555:562" ph="{}" />
+            <marker date="1554376590407" expanded="true" signature="675:850" ph="{...}" />
+            <marker date="1554376590407" expanded="false" signature="875:890" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="900:906" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="939:954" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="967:973" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1010:1025" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1044:1050" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1104:1119" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1150:1156" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1189:1204" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1216:1222" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1265:1280" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1297:1303" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1332:1347" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1358:1364" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1402:1417" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1432:1438" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1470:1485" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1499:1505" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1549:1564" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1585:1591" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1621:1636" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1651:1657" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1700:1715" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1738:1744" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1775:1790" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1803:1809" ph=" }" />
+            <marker date="1554376590407" expanded="false" signature="1852:1867" ph=" { " />
+            <marker date="1554376590407" expanded="false" signature="1886:1892" ph=" }" />
+            <marker date="1554376590407" expanded="true" signature="1932:1947" ph=" { " />
+            <marker date="1554376590407" expanded="true" signature="1969:1975" ph=" }" />
+            <marker date="1554376590407" expanded="true" signature="2035:2050" ph=" { " />
+            <marker date="1554376590407" expanded="true" signature="2087:2093" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/controller/AuditLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1554376500576" expanded="false" signature="58:336" ph="..." />
+            <marker date="1554376500576" expanded="false" signature="576:591" ph=" { " />
+            <marker date="1554376500576" expanded="false" signature="614:620" ph=" }" />
+            <marker date="1554376500576" expanded="true" signature="626:748" ph="/**...*/" />
+            <marker date="1554376500576" expanded="true" signature="860:956" ph="{...}" />
+            <marker date="1554376500576" expanded="true" signature="962:1050" ph="/**...*/" />
+            <marker date="1554376500576" expanded="true" signature="1155:1362" ph="{...}" />
+            <marker date="1554376500576" expanded="true" signature="1368:1536" ph="/**...*/" />
+            <marker date="1554376500576" expanded="true" signature="1913:2856" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/DumpTest20190226.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leroymerlin/va/validation/service/AuditLogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1162">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1551378136000" expanded="true" signature="38:78" ph="/*!40100 DEF... " />
-            <marker date="1551378136000" expanded="true" signature="289:353" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="355:421" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="423:487" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="489:515" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="517:559" ph="/*!40103 SET... " />
-            <marker date="1551378136000" expanded="true" signature="561:595" ph="/*!40103 SET... " />
-            <marker date="1551378136000" expanded="true" signature="597:664" ph="/*!40014 SET... " />
-            <marker date="1551378136000" expanded="true" signature="666:748" ph="/*!40014 SET... " />
-            <marker date="1551378136000" expanded="true" signature="750:824" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="826:881" ph="/*!40111 SET... " />
-            <marker date="1551378136000" expanded="true" signature="930:960" ph="DROP TABLE I... " />
-            <marker date="1551378136000" expanded="true" signature="962:1023" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="1025:1068" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="1070:1456" ph="CREATE TABLE... product" />
-            <marker date="1551378136000" expanded="true" signature="1458:1513" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="1588:1634" ph="/*!40000 ALT... " />
-            <marker date="1551378136000" expanded="true" signature="1636:1898" ph="INSERT INTO `product`... " />
-            <marker date="1551378136000" expanded="true" signature="1900:1945" ph="/*!40000 ALT... " />
-            <marker date="1551378136000" expanded="true" signature="2007:2035" ph="DROP TABLE I... " />
-            <marker date="1551378136000" expanded="true" signature="2037:2098" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="2100:2143" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="2145:2470" ph="CREATE TABLE... stock" />
-            <marker date="1551378136000" expanded="true" signature="2472:2527" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="2598:2642" ph="/*!40000 ALT... " />
-            <marker date="1551378136000" expanded="true" signature="2644:2791" ph="INSERT INTO `stock`... " />
-            <marker date="1551378136000" expanded="true" signature="2793:2836" ph="/*!40000 ALT... " />
-            <marker date="1551378136000" expanded="true" signature="2945:2985" ph="/*!40103 SET... " />
-            <marker date="1551378136000" expanded="true" signature="2988:3026" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="3028:3086" ph="/*!40014 SET... " />
-            <marker date="1551378136000" expanded="true" signature="3088:3136" ph="/*!40014 SET... " />
-            <marker date="1551378136000" expanded="true" signature="3138:3200" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="3202:3266" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="3268:3330" ph="/*!40101 SET... " />
-            <marker date="1551378136000" expanded="true" signature="3332:3372" ph="/*!40111 SET... " />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/VAValidationApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1554299523900" expanded="true" signature="31:143" ph="..." />
-            <marker date="1554299523900" expanded="true" signature="251:266" ph=" { " />
-            <marker date="1554299523900" expanded="true" signature="327:333" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <marker date="1551378136000" expanded="false" signature="38:167" ph="..." />
-            <marker date="1551378136000" expanded="true" signature="205:228" ph="@{...}" />
-            <marker date="1551378136000" expanded="true" signature="382:389" ph="{}" />
-            <marker date="1551378136000" expanded="true" signature="451:540" ph="{...}" />
-            <marker date="1551378136000" expanded="false" signature="571:582" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="599:605" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="650:661" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="688:694" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="730:741" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="760:766" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="818:829" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="860:866" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="903:914" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="934:940" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="994:1005" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="1038:1044" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="1073:1084" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="1099:1105" ph=" }" />
-            <marker date="1551378136000" expanded="false" signature="1146:1157" ph=" { " />
-            <marker date="1551378136000" expanded="false" signature="1180:1186" ph=" }" />
-            <marker date="1551378136000" expanded="true" signature="1227:1465" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <marker date="1554298999737" expanded="false" signature="39:511" ph="..." />
-            <marker date="1554298999737" expanded="false" signature="735:746" ph=" { " />
-            <marker date="1554298999737" expanded="false" signature="775:781" ph=" }" />
-            <marker date="1554298999737" expanded="false" signature="814:825" ph=" { " />
-            <marker date="1554298999737" expanded="false" signature="869:875" ph=" }" />
-            <marker date="1554298999737" expanded="false" signature="919:930" ph=" { " />
-            <marker date="1554298999737" expanded="false" signature="962:968" ph=" }" />
-            <marker date="1554298999737" expanded="true" signature="974:1097" ph="@{...}" />
-            <marker date="1554298999737" expanded="true" signature="1166:1669" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/config/VAValidationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <marker date="1554298999752" expanded="false" signature="38:148" ph="..." />
-            <marker date="1554298999752" expanded="true" signature="150:177" ph="@{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/controller/OrderVAController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>
