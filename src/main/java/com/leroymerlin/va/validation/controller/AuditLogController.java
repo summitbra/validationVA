@@ -1,6 +1,7 @@
 package com.leroymerlin.va.validation.controller;
 
 import com.leroymerlin.va.validation.entity.AuditLog;
+import com.leroymerlin.va.validation.pojo.Order;
 import com.leroymerlin.va.validation.service.AuditLogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,15 +37,15 @@ public class AuditLogController
     /**
      * Execute a Auditoria Default
      *
-     * @param audit
+     * @param order
      * @return
      */
     @PostMapping( "validate" )
-    public AuditLog executeValidation( @RequestBody AuditLog audit )
+    public AuditLog executeValidation( @RequestBody Order order )
     {
         LOG.info( "AuditLog: POST request received" );
 
-        AuditLog result = service.create( audit );
+        AuditLog result = service.executeDefault( order ) ;
 
         LOG.info( "AuditLog: Inserted with id " + result.getId( ) );
         return result;
