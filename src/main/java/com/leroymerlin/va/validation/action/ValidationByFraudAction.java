@@ -5,11 +5,10 @@ import com.leroymerlin.va.validation.util.Util;
 
 public class ValidationByFraudAction
 {
-    public static boolean execute( String orderVA )
+    public static boolean execute( Order orderVA )
     {
         try
         {
-            Order order = Util.transformToOrder( orderVA );
             //
             //
             //
