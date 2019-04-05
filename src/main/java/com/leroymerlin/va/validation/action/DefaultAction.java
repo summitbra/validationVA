@@ -1,17 +1,13 @@
 package com.leroymerlin.va.validation.action;
 
 import com.leroymerlin.va.validation.pojo.Order;
-import com.leroymerlin.va.validation.util.Util;
 
 public class DefaultAction
 {
-    public static boolean execute( String orderVA )
+    public static boolean execute( Order orderVA )
     {
         try
         {
-            Order order = Util.transformToOrder( orderVA );
-            //
-            //
             //
             return true ;
         }
