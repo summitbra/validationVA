@@ -63,10 +63,19 @@ public class AuditLogController
     @PostMapping( "validation/{id}" )
     public AuditLog processValidation( @PathVariable( "id" ) int id,
                                   @RequestParam( "action" ) String action,
-                                  @RequestParam( "value" ) String value,
+                                  @RequestBody String value,
                                   @RequestParam( required = false, value = "delay", defaultValue = "0" ) int delay )
     {
         LOG.info( "AuditLog: process " + id );
+        LOG.info( "AuditLog: action " + action );
+        LOG.info( "AuditLog: value " + value );
+
+        if (    ( action == null ) || ( action.trim().length() == 0 ) ||
+                ( value  == null ) || ( value.trim().length()  == 0 ) )
+        {
+            return null ;
+        }
+
         AuditLog auditLog;
 
         switch ( action )
