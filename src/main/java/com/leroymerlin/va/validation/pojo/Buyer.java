@@ -55,7 +55,7 @@ public class Buyer
 	private String gender;
 	private String bucCode = null;
 	Contact ContactObject;
-	ArrayList<Object> address = new ArrayList<Object>( );
+	ArrayList<Address> address = new ArrayList<Address>( );
 	private String foreignCustomer = null;
 	private String propertytype = null;
 	private String legalPerson;
@@ -811,5 +811,15 @@ public class Buyer
 	public void setTitle( String title )
 	{
 		this.title = title;
+	}
+
+	public ArrayList<Address> getAddress( )
+	{
+		return address;
+	}
+
+	public void setAddress( ArrayList<Address> address )
+	{
+		this.address = address;
 	}
 }
