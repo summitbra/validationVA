@@ -1,7 +1,9 @@
 package com.leroymerlin.va.validation.service;
 
+import com.google.gson.Gson;
 import com.leroymerlin.va.validation.action.*;
 import com.leroymerlin.va.validation.entity.AuditLog;
+import com.leroymerlin.va.validation.pojo.Order;
 import com.leroymerlin.va.validation.repository.AuditLogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,14 +32,57 @@ public class AuditLogService
         return repository.save( audit );
     }
 
+    public AuditLog executeDefault( Order order )
+    {
+        boolean result = DefaultAction.execute( order );
+
+        boolean resultByPrice = ValidationByPriceAction.execute( order );
+        boolean resultByStock = ValidationByStockAction.execute( order );
+        boolean resultByPromotion = ValidationByPromotionAction.execute( order );
+        boolean resultByFraud = ValidationByFraudAction.execute( order );
+        boolean resultByCustomer = ValidationByCustomerAction.execute( order );
+
+        AuditLog audit = new AuditLog( );
+        audit.setDate( new Timestamp( new Date().getTime( ) ) );
+        audit.setDescription( "Auditoria no VA com todas as regras de Pedido") ;
+        audit.setObject( order.toString( ) );
+        String log = " execution default: " + result +
+                " execution price: "   + resultByPrice +
+                " execution stock: " + resultByStock +
+                " execution promotion: " + resultByPromotion +
+                " execution fraud: " + resultByFraud  +
+                " execution customer: " + resultByCustomer  ;
+        audit.setLog( log );
+        audit.setValidationType( "default" );
+        if ( result &&
+                resultByPrice &&
+                resultByStock &&
+                resultByPromotion &&
+                resultByFraud &&
+                resultByCustomer )
+        {
+            audit.setValid( true );
+        }
+        else
+        {
+            audit.setValid( false );
+        }
+
+        repository.save( audit );
+        return audit ;
+    }
+
     public AuditLog executeDefault( int id, String value, int delay )
     {
-        boolean result = DefaultAction.execute( value );
-        boolean resultByPrice = ValidationByPriceAction.execute( value );
-        boolean resultByStock = ValidationByStockAction.execute( value );
-        boolean resultByPromotion = ValidationByPromotionAction.execute( value );
-        boolean resultByFraud = ValidationByFraudAction.execute( value );
-        boolean resultByCustomer = ValidationByCustomerAction.execute( value );
+        Gson gson = new Gson( );
+        Order order = gson.fromJson( value, Order.class);
+
+        boolean result = DefaultAction.execute( order );
+        boolean resultByPrice = ValidationByPriceAction.execute( order );
+        boolean resultByStock = ValidationByStockAction.execute( order );
+        boolean resultByPromotion = ValidationByPromotionAction.execute( order );
+        boolean resultByFraud = ValidationByFraudAction.execute( order );
+        boolean resultByCustomer = ValidationByCustomerAction.execute( order );
 
         AuditLog audit = new AuditLog( );
         audit.setDate( new Timestamp( new Date().getTime( ) ) );
@@ -71,7 +116,10 @@ public class AuditLogService
 
     public AuditLog executeByPrice( int id, String value, int delay )
     {
-        boolean resultByPrice = ValidationByPriceAction.execute( value );
+        Gson gson = new Gson();
+        Order order = gson.fromJson( value, Order.class);
+
+        boolean resultByPrice = ValidationByPriceAction.execute( order );
 
         AuditLog audit = new AuditLog( );
         audit.setDate( new Timestamp( new Date().getTime( ) ) );
@@ -95,7 +143,10 @@ public class AuditLogService
 
     public AuditLog executeByStock( int id, String value, int delay )
     {
-        boolean resultByStock = ValidationByStockAction.execute( value );
+        Gson gson = new Gson();
+        Order order = gson.fromJson( value, Order.class);
+
+        boolean resultByStock = ValidationByStockAction.execute( order );
 
         AuditLog audit = new AuditLog( );
         audit.setDate( new Timestamp( new Date().getTime( ) ) );
@@ -118,7 +169,10 @@ public class AuditLogService
 
     public AuditLog executeByPromotion( int id, String value, int delay )
     {
-        boolean resultByPromotion = ValidationByPromotionAction.execute( value );
+        Gson gson = new Gson();
+        Order order = gson.fromJson( value, Order.class);
+
+        boolean resultByPromotion = ValidationByPromotionAction.execute( order );
 
         AuditLog audit = new AuditLog( );
         audit.setDate( new Timestamp( new Date().getTime( ) ) );
@@ -141,7 +195,10 @@ public class AuditLogService
 
     public AuditLog executeByFraud( int id, String value, int delay )
     {
-        boolean resultByFraud = ValidationByFraudAction.execute( value );
+        Gson gson = new Gson();
+        Order order = gson.fromJson( value, Order.class);
+
+        boolean resultByFraud = ValidationByFraudAction.execute( order );
 
         AuditLog audit = new AuditLog( );
         audit.setDate( new Timestamp( new Date().getTime( ) ) );
@@ -164,7 +221,10 @@ public class AuditLogService
 
     public AuditLog executeByCustomer( int id, String value, int delay )
     {
-        boolean resultByCustomer = ValidationByCustomerAction.execute( value );
+        Gson gson = new Gson();
+        Order order = gson.fromJson( value, Order.class);
+
+        boolean resultByCustomer = ValidationByCustomerAction.execute( order );
 
         AuditLog audit = new AuditLog( );
         audit.setDate( new Timestamp( new Date().getTime( ) ) );

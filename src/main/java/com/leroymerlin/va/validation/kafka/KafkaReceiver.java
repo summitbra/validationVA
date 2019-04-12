@@ -31,19 +31,19 @@ public class KafkaReceiver {
         this.auditController = auditController;
     }
 
-    @KafkaListener(topics = "${topic.boot}")
-    public void receive(ConsumerRecord<?, String> consumerRecord) {
-        LOGGER.info("received data='{}'", consumerRecord.toString());
-
-        try {
-            JmsResponse message = new ObjectMapper().readValue(consumerRecord.value(), JmsResponse.class);
-
-            auditController.processValidation(message.getId(), message.getAction(), message.getValue(), 0);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        latch.countDown();
-    }
+//    @KafkaListener(topics = "${topic.boot}")
+//    public void receive(ConsumerRecord<?, String> consumerRecord) {
+//        LOGGER.info("received data='{}'", consumerRecord.toString());
+//
+//        try {
+//            JmsResponse message = new ObjectMapper().readValue(consumerRecord.value(), JmsResponse.class);
+//
+//            auditController.processValidation(message.getId(), message.getAction(), message.getValue(), 0);
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        latch.countDown();
+//    }
 }

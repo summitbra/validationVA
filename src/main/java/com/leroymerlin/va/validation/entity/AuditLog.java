@@ -1,9 +1,6 @@
 package com.leroymerlin.va.validation.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Version;
+import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Timestamp;
 
@@ -17,6 +14,7 @@ public class AuditLog
     private String description;
     private Timestamp date;
     private String log;
+    @Column(name="object", nullable=false, length=10000)
     private String object;
     private String validationType;
     private boolean valid;
