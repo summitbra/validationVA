@@ -11,26 +11,27 @@ public class Order
 	private String description = null;
 	private String expirationTime = null;
 	private boolean net;
-	TotalPriceWithTax TotalPriceWithTaxObject;
-	TotalPrice TotalPriceObject;
-	TotalTax TotalTaxObject;
-	SubTotal SubTotalObject;
-	SubTotalWithoutQuoteDiscounts SubTotalWithoutQuoteDiscountsObject;
-	DeliveryCost DeliveryCostObject;
-	ArrayList<Object> entries = new ArrayList<Object>( );
+	TotalPriceWithTax totalPriceWithTax;
+	TotalPrice totalPrice;
+	TotalTax totalTax;
+	SubTotal subTotal;
+	SubTotalWithoutQuoteDiscounts subTotalWithoutQuoteDiscounts;
+	DeliveryCost deliveryCost;
+	ArrayList<Entry> entries = new ArrayList<Entry>( );
+//	ArrayList<Object> entries = new ArrayList<Object>( );
 	private float totalItems;
 	private String deliveryMode = null;
-	DeliveryAddress DeliveryAddressObject;
+	DeliveryAddress deliveryAddress;
 	private String paymentInfo = null;
 	ArrayList<Object> appliedOrderPromotions = new ArrayList<Object>( );
 	ArrayList<Object> appliedProductPromotions = new ArrayList<Object>( );
-	ProductDiscounts ProductDiscountsObject;
-	OrderDiscounts OrderDiscountsObject;
-	QuoteDiscounts QuoteDiscountsObject;
+	ProductDiscounts productDiscounts;
+	OrderDiscounts orderDiscounts;
+	QuoteDiscounts quoteDiscounts;
 	private float quoteDiscountsRate;
 	private String quoteDiscountsType;
-	TotalDiscounts TotalDiscountsObject;
-	TotalDiscountsWithQuoteDiscounts TotalDiscountsWithQuoteDiscountsObject;
+	TotalDiscounts totalDiscounts;
+	TotalDiscountsWithQuoteDiscounts totalDiscountsWithQuoteDiscounts;
 	private String subTotalWithDiscounts = null;
 	private String site;
 	private String store;
@@ -51,9 +52,9 @@ public class Order
 	private String priceTotals = null;
 	private String orderCardNumber = null;
 	private String totalDiscountsValue = null;
-	TotalGrossValue TotalGrossValueObject;
+	TotalGrossValue totalGrossValue;
 	private String expiryDate = null;
-	Buyer BuyerObject;
+	Buyer buyer;
 	private String selectedDiscountReason = null;
 	private String appliedDiscountReasons = null;
 	private String discountReasons = null;
@@ -66,10 +67,10 @@ public class Order
 	private String quoteData = null;
 	private String importStatus = null;
 	private String costCenter = null;
-	PaymentType PaymentTypeObject;
+	PaymentType paymentType;
 	private String purchaseOrderNumber = null;
 	private String b2BComment = null;
-	B2bCustomerData B2bCustomerDataObject;
+	B2bCustomerData b2bCustomerData;
 	private boolean quoteAllowed;
 	private boolean isCelebre;
 	private boolean isBNDES;
@@ -77,9 +78,9 @@ public class Order
 	private String isCurrent = null;
 	private float data;
 	private float totalWeight;
-	Status StatusObject;
+	Status status;
 	private String orderType;
-	EntriesForOutgoingFlows EntriesForOutgoingFlowsObject;
+	EntriesForOutgoingFlows entriesForOutgoingFlows;
 	ArrayList<Object> transactions = new ArrayList<Object>( );
 	private String linkedOldCartCode = null;
 	private boolean isRedeliveryOrCollect;
@@ -88,10 +89,10 @@ public class Order
 	private String antiFraudReasonRefuse = null;
 	private String antiFraudSolicitation = null;
 	ArrayList<Object> paymentTransactions = new ArrayList<Object>( );
-	CanEdit CanEditObject;
-	PaymentAddress PaymentAddressObject;
+	CanEdit canEdit;
+	PaymentAddress paymentAddress;
 	private String lastAntiFraudLog = null;
-	ProductQuantityHash ProductQuantityHashObject;
+	ProductQuantityHash productQuantityHash;
 	private String storeName;
 	private String elegibleMessage = null;
 	private String dateEliminatedOrder = null;
@@ -99,7 +100,7 @@ public class Order
 	private String davNumber = null;
 	private String preSaleNumber = null;
 	private boolean userPartialApproverPermission;
-	LastStatus LastStatusObject;
+	LastStatus lastStatus;
 	private String comApprovalWeightedMargin = null;
 	private String canEditCart = null;
 	private String note;
@@ -114,7 +115,7 @@ public class Order
 	private String comercialApprovalDate = null;
 	private String followUpReason = null;
 	private float creationtime;
-	AntiFraudApprovalUser AntiFraudApprovalUserObject;
+	AntiFraudApprovalUser antiFraudApprovalUser;
 	private String antiFraudApprovalDate = null;
 	private String isWarrantyProductService = null;
 	private String isWarrantyServiceIncrease = null;
@@ -149,32 +150,32 @@ public class Order
 
 	public TotalPriceWithTax getTotalPriceWithTax( )
 	{
-		return TotalPriceWithTaxObject;
+		return totalPriceWithTax;
 	}
 
 	public TotalPrice getTotalPrice( )
 	{
-		return TotalPriceObject;
+		return totalPrice;
 	}
 
 	public TotalTax getTotalTax( )
 	{
-		return TotalTaxObject;
+		return totalTax;
 	}
 
 	public SubTotal getSubTotal( )
 	{
-		return SubTotalObject;
+		return subTotal;
 	}
 
 	public SubTotalWithoutQuoteDiscounts getSubTotalWithoutQuoteDiscounts( )
 	{
-		return SubTotalWithoutQuoteDiscountsObject;
+		return subTotalWithoutQuoteDiscounts;
 	}
 
 	public DeliveryCost getDeliveryCost( )
 	{
-		return DeliveryCostObject;
+		return deliveryCost;
 	}
 
 	public float getTotalItems( )
@@ -189,7 +190,7 @@ public class Order
 
 	public DeliveryAddress getDeliveryAddress( )
 	{
-		return DeliveryAddressObject;
+		return deliveryAddress;
 	}
 
 	public String getPaymentInfo( )
@@ -199,17 +200,17 @@ public class Order
 
 	public ProductDiscounts getProductDiscounts( )
 	{
-		return ProductDiscountsObject;
+		return productDiscounts;
 	}
 
 	public OrderDiscounts getOrderDiscounts( )
 	{
-		return OrderDiscountsObject;
+		return orderDiscounts;
 	}
 
 	public QuoteDiscounts getQuoteDiscounts( )
 	{
-		return QuoteDiscountsObject;
+		return quoteDiscounts;
 	}
 
 	public float getQuoteDiscountsRate( )
@@ -224,12 +225,12 @@ public class Order
 
 	public TotalDiscounts getTotalDiscounts( )
 	{
-		return TotalDiscountsObject;
+		return totalDiscounts;
 	}
 
 	public TotalDiscountsWithQuoteDiscounts getTotalDiscountsWithQuoteDiscounts( )
 	{
-		return TotalDiscountsWithQuoteDiscountsObject;
+		return totalDiscountsWithQuoteDiscounts;
 	}
 
 	public String getSubTotalWithDiscounts( )
@@ -309,7 +310,7 @@ public class Order
 
 	public TotalGrossValue getTotalGrossValue( )
 	{
-		return TotalGrossValueObject;
+		return totalGrossValue;
 	}
 
 	public String getExpiryDate( )
@@ -319,7 +320,7 @@ public class Order
 
 	public Buyer getBuyer( )
 	{
-		return BuyerObject;
+		return buyer;
 	}
 
 	public String getSelectedDiscountReason( )
@@ -369,7 +370,7 @@ public class Order
 
 	public PaymentType getPaymentType( )
 	{
-		return PaymentTypeObject;
+		return paymentType;
 	}
 
 	public String getPurchaseOrderNumber( )
@@ -384,7 +385,7 @@ public class Order
 
 	public B2bCustomerData getB2bCustomerData( )
 	{
-		return B2bCustomerDataObject;
+		return b2bCustomerData;
 	}
 
 	public boolean getQuoteAllowed( )
@@ -424,7 +425,7 @@ public class Order
 
 	public Status getStatus( )
 	{
-		return StatusObject;
+		return status;
 	}
 
 	public String getOrderType( )
@@ -434,7 +435,7 @@ public class Order
 
 	public EntriesForOutgoingFlows getEntriesForOutgoingFlows( )
 	{
-		return EntriesForOutgoingFlowsObject;
+		return entriesForOutgoingFlows;
 	}
 
 	public String getLinkedOldCartCode( )
@@ -469,12 +470,12 @@ public class Order
 
 	public CanEdit getCanEdit( )
 	{
-		return CanEditObject;
+		return canEdit;
 	}
 
 	public PaymentAddress getPaymentAddress( )
 	{
-		return PaymentAddressObject;
+		return paymentAddress;
 	}
 
 	public String getLastAntiFraudLog( )
@@ -484,7 +485,7 @@ public class Order
 
 	public ProductQuantityHash getProductQuantityHash( )
 	{
-		return ProductQuantityHashObject;
+		return productQuantityHash;
 	}
 
 	public String getStoreName( )
@@ -524,7 +525,7 @@ public class Order
 
 	public LastStatus getLastStatus( )
 	{
-		return LastStatusObject;
+		return lastStatus;
 	}
 
 	public String getComApprovalWeightedMargin( )
@@ -599,7 +600,7 @@ public class Order
 
 	public AntiFraudApprovalUser getAntiFraudApprovalUser( )
 	{
-		return AntiFraudApprovalUserObject;
+		return antiFraudApprovalUser;
 	}
 
 	public String getAntiFraudApprovalDate( )
@@ -651,33 +652,33 @@ public class Order
 
 	public void setTotalPriceWithTax( TotalPriceWithTax totalPriceWithTaxObject )
 	{
-		this.TotalPriceWithTaxObject = totalPriceWithTaxObject;
+		this.totalPriceWithTax = totalPriceWithTaxObject;
 	}
 
 	public void setTotalPrice( TotalPrice totalPriceObject )
 	{
-		this.TotalPriceObject = totalPriceObject;
+		this.totalPrice = totalPriceObject;
 	}
 
 	public void setTotalTax( TotalTax totalTaxObject )
 	{
-		this.TotalTaxObject = totalTaxObject;
+		this.totalTax = totalTaxObject;
 	}
 
 	public void setSubTotal( SubTotal subTotalObject )
 	{
-		this.SubTotalObject = subTotalObject;
+		this.subTotal = subTotalObject;
 	}
 
 	public void setSubTotalWithoutQuoteDiscounts(
 			SubTotalWithoutQuoteDiscounts subTotalWithoutQuoteDiscountsObject )
 	{
-		this.SubTotalWithoutQuoteDiscountsObject = subTotalWithoutQuoteDiscountsObject;
+		this.subTotalWithoutQuoteDiscounts = subTotalWithoutQuoteDiscountsObject;
 	}
 
 	public void setDeliveryCost( DeliveryCost deliveryCostObject )
 	{
-		this.DeliveryCostObject = deliveryCostObject;
+		this.deliveryCost = deliveryCostObject;
 	}
 
 	public void setTotalItems( float totalItems )
@@ -692,7 +693,7 @@ public class Order
 
 	public void setDeliveryAddress( DeliveryAddress deliveryAddressObject )
 	{
-		this.DeliveryAddressObject = deliveryAddressObject;
+		this.deliveryAddress = deliveryAddressObject;
 	}
 
 	public void setPaymentInfo( String paymentInfo )
@@ -700,19 +701,19 @@ public class Order
 		this.paymentInfo = paymentInfo;
 	}
 
-	public void setProductDiscounts( ProductDiscounts productDiscountsObject )
+	public void setProductDiscounts( ProductDiscounts productDiscounts )
 	{
-		this.ProductDiscountsObject = productDiscountsObject;
+		this.productDiscounts = productDiscounts;
 	}
 
 	public void setOrderDiscounts( OrderDiscounts orderDiscountsObject )
 	{
-		this.OrderDiscountsObject = orderDiscountsObject;
+		this.orderDiscounts = orderDiscountsObject;
 	}
 
 	public void setQuoteDiscounts( QuoteDiscounts quoteDiscountsObject )
 	{
-		this.QuoteDiscountsObject = quoteDiscountsObject;
+		this.quoteDiscounts = quoteDiscountsObject;
 	}
 
 	public void setQuoteDiscountsRate( float quoteDiscountsRate )
@@ -727,13 +728,13 @@ public class Order
 
 	public void setTotalDiscounts( TotalDiscounts totalDiscountsObject )
 	{
-		this.TotalDiscountsObject = totalDiscountsObject;
+		this.totalDiscounts = totalDiscountsObject;
 	}
 
 	public void setTotalDiscountsWithQuoteDiscounts(
 			TotalDiscountsWithQuoteDiscounts totalDiscountsWithQuoteDiscountsObject )
 	{
-		this.TotalDiscountsWithQuoteDiscountsObject = totalDiscountsWithQuoteDiscountsObject;
+		this.totalDiscountsWithQuoteDiscounts = totalDiscountsWithQuoteDiscountsObject;
 	}
 
 	public void setSubTotalWithDiscounts( String subTotalWithDiscounts )
@@ -813,7 +814,7 @@ public class Order
 
 	public void setTotalGrossValue( TotalGrossValue totalGrossValueObject )
 	{
-		this.TotalGrossValueObject = totalGrossValueObject;
+		this.totalGrossValue = totalGrossValueObject;
 	}
 
 	public void setExpiryDate( String expiryDate )
@@ -823,7 +824,7 @@ public class Order
 
 	public void setBuyer( Buyer buyerObject )
 	{
-		this.BuyerObject = buyerObject;
+		this.buyer = buyerObject;
 	}
 
 	public void setSelectedDiscountReason( String selectedDiscountReason )
@@ -873,7 +874,7 @@ public class Order
 
 	public void setPaymentType( PaymentType paymentTypeObject )
 	{
-		this.PaymentTypeObject = paymentTypeObject;
+		this.paymentType = paymentTypeObject;
 	}
 
 	public void setPurchaseOrderNumber( String purchaseOrderNumber )
@@ -888,7 +889,7 @@ public class Order
 
 	public void setB2bCustomerData( B2bCustomerData b2bCustomerDataObject )
 	{
-		this.B2bCustomerDataObject = b2bCustomerDataObject;
+		this.b2bCustomerData = b2bCustomerDataObject;
 	}
 
 	public void setQuoteAllowed( boolean quoteAllowed )
@@ -928,7 +929,7 @@ public class Order
 
 	public void setStatus( Status statusObject )
 	{
-		this.StatusObject = statusObject;
+		this.status = statusObject;
 	}
 
 	public void setOrderType( String orderType )
@@ -938,7 +939,7 @@ public class Order
 
 	public void setEntriesForOutgoingFlows( EntriesForOutgoingFlows entriesForOutgoingFlowsObject )
 	{
-		this.EntriesForOutgoingFlowsObject = entriesForOutgoingFlowsObject;
+		this.entriesForOutgoingFlows = entriesForOutgoingFlowsObject;
 	}
 
 	public void setLinkedOldCartCode( String linkedOldCartCode )
@@ -973,12 +974,12 @@ public class Order
 
 	public void setCanEdit( CanEdit canEditObject )
 	{
-		this.CanEditObject = canEditObject;
+		this.canEdit = canEditObject;
 	}
 
 	public void setPaymentAddress( PaymentAddress paymentAddressObject )
 	{
-		this.PaymentAddressObject = paymentAddressObject;
+		this.paymentAddress = paymentAddressObject;
 	}
 
 	public void setLastAntiFraudLog( String lastAntiFraudLog )
@@ -988,7 +989,7 @@ public class Order
 
 	public void setProductQuantityHash( ProductQuantityHash productQuantityHashObject )
 	{
-		this.ProductQuantityHashObject = productQuantityHashObject;
+		this.productQuantityHash = productQuantityHashObject;
 	}
 
 	public void setStoreName( String storeName )
@@ -1028,7 +1029,7 @@ public class Order
 
 	public void setLastStatus( LastStatus lastStatusObject )
 	{
-		this.LastStatusObject = lastStatusObject;
+		this.lastStatus = lastStatusObject;
 	}
 
 	public void setComApprovalWeightedMargin( String comApprovalWeightedMargin )
@@ -1103,7 +1104,7 @@ public class Order
 
 	public void setAntiFraudApprovalUser( AntiFraudApprovalUser antiFraudApprovalUserObject )
 	{
-		this.AntiFraudApprovalUserObject = antiFraudApprovalUserObject;
+		this.antiFraudApprovalUser = antiFraudApprovalUserObject;
 	}
 
 	public void setAntiFraudApprovalDate( String antiFraudApprovalDate )

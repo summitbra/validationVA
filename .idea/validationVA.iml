@@ -109,5 +109,6 @@
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.lz4:lz4-java:1.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.5" level="project" />
   </component>
 </module>
